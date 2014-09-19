@@ -1,4 +1,3 @@
-setwd("D:/AdLearn/R/data")
 
 if(!file.exists("stormdata")) {
         dir.create("stormdata")
@@ -9,3 +8,4 @@ dateDownloaded <- date()
 
 stormdata.csv<- bzfile("stormdata.bz2")
 stormdata<-read.csv(stormdata.csv)
+head(stormdata)
